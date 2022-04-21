@@ -1,0 +1,31 @@
+{
+  "name": "react-starter-app",
+  "version": "1.0.0",
+  "description": "A client-server architecture enabled React starter app",
+  "main": "dist/index.js",
+  "author": "Utkarsh Garg <utkarsh22garg@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev:server": "nodemon ./dist/server/index",
+    "dev:client": "cd client && yarn start",
+    "dev:tsc": "tsc --watch",
+    "develop": "concurrently --kill-others-on-fail --prefix \"[{name}]\" --names \"TSC, Server, Client\" -c \"white.bgBlue.bold,black.bgYellow.dim,white.bgMagenta.dim\" \"yarn dev:tsc\" \"yarn dev:server\" \"yarn dev:client\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "~4.16.1",
+    "helmet": "^5.0.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/helmet": "^4.0.0",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^17.0.25",
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.6.3"
+  }
+}
