@@ -1,5 +1,5 @@
 name: Full Stack App Core Setup
-on: [push],
+on: [push]
 jobs:
   runs-on: ubuntu-latest
   steps:
