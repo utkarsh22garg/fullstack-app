@@ -11,6 +11,7 @@
     "dev:tsc": "tsc --watch",
     "develop": "concurrently --kill-others-on-fail --prefix \"[{name}]\" --names \"TSC, Server, Client\" -c \"white.bgBlue.bold,black.bgYellow.dim,white.bgMagenta.dim\" \"yarn dev:tsc\" \"yarn dev:server\" \"yarn dev:client\"",
     "prettify": "prettier --write . '!**/*.{js,jsx,ts, tsx}'",
+    "lint": "eslint",
     "lint:fix": "eslint . --fix",
     "format": "yarn run prettify && yarn run lint:fix"
   },
