@@ -1,10 +1,10 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist/server",
-        "allowJs": false,
-        "target": "ES2018",
-        "module": "commonJs",
-        "esModuleInterop": true,
-    },
-    "include": ["./server/**/*"]
+  "compilerOptions": {
+    "outDir": "./dist/server",
+    "allowJs": false,
+    "target": "ES2018",
+    "module": "commonJs",
+    "esModuleInterop": true
+  },
+  "include": ["./server/**/*", ".eslintrc.js"]
 }
