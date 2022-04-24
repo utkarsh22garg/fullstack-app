@@ -1,8 +1,8 @@
 name: Full Stack App Core Setup
 on: [push]
 jobs:
-  runs-on: "ubuntu-latest"
   linter:
+    runs-on: "ubuntu-latest"
     steps:
       - uses: actions/checkout@v3
       
