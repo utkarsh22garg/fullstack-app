@@ -11,5 +11,10 @@ jobs:
         with:
           node-version: "16.x"
       
+      - name: Install packages
+        run: |
+            npm install
+            cd client && npm install && cd client
+      
       - name: Linting
         run: npm run lint
